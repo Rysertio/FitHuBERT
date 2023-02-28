@@ -1,5 +1,5 @@
 teacher:
-  teacher_model: 'hubert_base_ls960.pt'
+  teacher_model: 'hubert_softvc.pt'
 
 train:
   output_dir: 'FitHuBERT-960h' 
@@ -98,9 +98,9 @@ optimizer:
   
 data:
   bucketing_path: './data/len_for_bucket'
-  libri_root: '../LibriSpeech'
-  train_set: ['train-clean-100', 'train-clean-360', 'train-other-500']
-  test_set: ['test-clean']
+  libri_root: './LibriSpeech'
+  train_set: ['asr_bengali_0', 'asr_bengali_1', 'asr_bengali_2', 'asr_bengali_3']
+  test_set: ['asr_bengali_4']
 
 specaug:
   adaptive: false
